@@ -6,14 +6,15 @@
     function alertNumber(){
       alert(number)
     }
-    function setNumber(toNumber){
-      number = toNumber
+    function addNumber(withNumber){
+      number =+ withNumber
     }
     
     //-->
   </script>
 </head>
 <body>
-  <input type="button" onclick="setNumber(1)" value="Set number to 1"></input> <input type="button" onclick="setNumber(2)" value="Set number to 2"></input> <input type="button" onclick="setNumber(3)" value="Set number to 3"></input> <input type="button" onclick="alertNumber()" value="Alert"></input>
+  <input type="button" onclick="addNumber(1)" value="Add 1"></input> <input type="button" onclick="addNumber(5)" value="Add 5"></input> <input type="button" onclick="addNumber(10)" value="Add 10"></input> <input type="button" onclick="addNumber(-10)" value="Remove 10"></input> <input type="button" onclick="addNumber(-5)" value="Remove 5"></input> <input type="button" onclick="addNumber(-1)" value="Remove 1"></input>
+ <input type="button" onclick="alertNumber()" value="Say number"></input>  
 </body>
 </html>

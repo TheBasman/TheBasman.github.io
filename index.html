@@ -17,9 +17,7 @@
  <script type="text/javascript">
  <!--
  function writeNumber(){
-  document.open();
-  document.write("Your number is " + number);
-  document.close();
+  document.getElementById("output1").innerhtml="Your number is " + number;
  }
  setInterval(writeNumber, 5000)
  //-->

@@ -14,10 +14,11 @@
 <body>
   <input type="button" onclick="addNumber(1)" value="Add 1"></input> <input type="button" onclick="addNumber(5)" value="Add 5"></input> <input type="button" onclick="addNumber(10)" value="Add 10"></input> <input type="button" onclick="addNumber(-10)" value="Remove 10"></input> <input type="button" onclick="addNumber(-5)" value="Remove 5"></input> <input type="button" onclick="addNumber(-1)" value="Remove 1"></input>
   <input type="button" onclick="writeNumber()" value="Return number">
+  <p id="numboar">Your number is 0</p>
  <script type="text/javascript">
  <!--
  function writeNumber(){
-  document.getElementById('output1').innerHTML='Your number is ' + number;
+  document.getElementById('numboar').innerHTML='Your number is ' + number;
  }
  setInterval(writeNumber, 5000)
  //-->

@@ -15,6 +15,8 @@
   <input type="button" onclick="addNumber(1)" value="Add 1"></input> <input type="button" onclick="addNumber(5)" value="Add 5"></input> <input type="button" onclick="addNumber(10)" value="Add 10"> <input type="button" onclick="addNumber(50)" value="Add 50"></input> <input type="button" onclick="addNumber(100)" value="Add 100"></input> <input type="button" onclick="addNumber(500)" value="Add 500"></input> <input type="button" onclick="addNumber(1000)" value="Add 1000"></input> <input type="button" onclick="addNumber(-1000)" value="Remove 1000"></input> <input type="button" onclick="addNumber(-500)" value="Remove 500"></input> <input type="button" onclick="addNumber(-100)" value="Remove 100"></input> <input type="button" onclick="addNumber(-50)" value="Remove 50"></input> <input type="button" onclick="addNumber(-10)" value="Remove 10"></input> <input type="button" onclick="addNumber(-5)" value="Remove 5"></input> <input type="button" onclick="addNumber(-1)" value="Remove 1"></input>
   <p id="numboar">Your number is 0</p>
   <p id="soop">Please unlock meme for more text</p>
+  <p id="question"></p>
+  <p id="layton"></p>
   <p>Made by Sebas Raktoe</p>
  <script type="text/javascript">
  <!--
@@ -396,7 +398,22 @@
     }
   
  addBackground();
- 
+ var a;
+ var b;
+ a = Math.floor((Math.random()*100)+1);
+ b = Math.floor((Math.random()*100)+1);
+ c = a + b
+ function checkLayton(){
+    document.getElementById('question').innerHTML= a + '+' + b
+   if (c == number){
+     document.getElementById('soop').innerHTML= <img src="http://67.media.tumblr.com/f1441acdce6a439783f95e9f74b5ab1d/tumblr_n7xgufm43M1tenkcgo2_400.gif">
+   }
+   else {
+     document.getElementById('soop').innerHTML= <img src="http://67.media.tumblr.com/3334998b051f0b0b84c86e4ececa2c26/tumblr_mjpqz5rd2v1rhm9ago4_500.gif">
+   }
+ }
+ setInterval(checkLayton, 100)
+
  //-->
  </script>
  

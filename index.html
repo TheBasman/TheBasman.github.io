@@ -398,13 +398,13 @@
     }
   
  addBackground();
- 
- function checkLayton(){
- var a;
- var b;
+ a = 1;
+ b = 1;
  a = Math.floor((Math.random()*100)+1);
  b = Math.floor((Math.random()*100)+1);
  c = a + b
+ 
+ function checkLayton(){
     document.getElementById('question').innerHTML= a + '+' + b
    if (c == number){
      document.getElementById('soop').innerHTML= '<img src="http://67.media.tumblr.com/f1441acdce6a439783f95e9f74b5ab1d/tumblr_n7xgufm43M1tenkcgo2_400.gif">'
